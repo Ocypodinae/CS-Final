@@ -96,8 +96,12 @@ public class Visualization extends Application implements EventHandler<ActionEve
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
       	Random generator = new Random();
-		backgroundNum = generator.nextInt(15)+1;
-		backgroundNum += generator.nextInt(16);
+	backgroundNum = generator.nextInt(15)+1;
+	backgroundNum += generator.nextInt(16);
+	//Lind16.css never seems to work, no matter how I change it, so I decided that it's cursed.
+	if(backgroundNum == 16){
+		backgroundNum = 22;
+	}
         
         //setFill to black - 6, 4, 7, 8, 9, 10, 11, 12, 13, 18, 26, 29
       	int a = backgroundNum;
@@ -109,34 +113,34 @@ public class Visualization extends Application implements EventHandler<ActionEve
       	
         layout.getChildren().add(canvas);
         Scene scene = new Scene(layout);
-		//22 is the best backgroundNum. Next are: 24, 30, 5, and 13
-		scene.getStylesheets().add("practice/Lind" + backgroundNum +".css");
+	//22 is the best backgroundNum. Next are: 24, 30, 5, and 13
+	scene.getStylesheets().add("practice/Lind" + backgroundNum +".css");
 		
-		//Add music
-		//create a menu
-		Menu museMenu = new Menu("Music");
+	//Add music
+	//create a menu
+	Menu museMenu = new Menu("Music");
 
-		MenuItem wing = new MenuItem("WingWing");
-		wing.setOnAction(new EventHandler<ActionEvent>() {
+	MenuItem wing = new MenuItem("WingWing");
+	wing.setOnAction(new EventHandler<ActionEvent>() {
 
-			public void handle(ActionEvent e) {
-				String musicFile = "Violin-WingWing.mp3";     
+		public void handle(ActionEvent e) {
+			String musicFile = "Violin-WingWing.mp3";     
 
-				Media sound = new Media(new File(musicFile).toURI().toString());
-				MediaPlayer mediaPlayer = new MediaPlayer(sound);
-				mediaPlayer.play();
-			}
+			Media sound = new Media(new File(musicFile).toURI().toString());
+			MediaPlayer mediaPlayer = new MediaPlayer(sound);
+			mediaPlayer.play();
+		}
 					
-		});	
+	});	
 		
-		museMenu.getItems().addAll(wing);
-		MenuBar mb = new MenuBar();
-		mb.getMenus().addAll(museMenu);
-		//add it to the top of the scene
-		layout.setTop(mb);
+	museMenu.getItems().addAll(wing);
+	MenuBar mb = new MenuBar();
+	mb.getMenus().addAll(museMenu);
+	//add it to the top of the scene
+	layout.setTop(mb);
 		
         window.setScene(scene);
-		window.show();
+	window.show();
 	}
 	
 
