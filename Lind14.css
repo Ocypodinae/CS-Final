@@ -1,0 +1,15 @@
+.root {
+    	-fx-background-color: #FFFFFFF;
+	-fx-background-image: url("http://laughingsquid.com/wp-content/uploads/2013/05/waneella2.gif");
+}
+
+.label{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}
+
+.button{ 
+    -fx-background-radius: 4;
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}

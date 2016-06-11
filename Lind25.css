@@ -1,0 +1,15 @@
+.root {
+    	-fx-background-color: #FFFFFFF;
+	-fx-background-image: url("http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/ocean-gif.gif");
+}
+
+.label{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}
+
+.button{ 
+    -fx-background-radius: 4;
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}

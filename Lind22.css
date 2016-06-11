@@ -1,0 +1,15 @@
+.root {
+    	-fx-background-color: #FFFFFFF;
+	-fx-background-image: url("http://66.media.tumblr.com/tumblr_md55e2v08u1rf089no1_500.gif");
+}
+
+.label{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}
+
+.button{ 
+    -fx-background-radius: 4;
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}

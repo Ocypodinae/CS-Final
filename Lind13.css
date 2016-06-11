@@ -1,0 +1,15 @@
+.root {
+    	-fx-background-color: #FFFFFFF;
+	-fx-background-image: url("https://media.giphy.com/media/ToMjGplds6a0EREVEpW/giphy.gif");
+}
+
+.label{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}
+
+.button{ 
+    -fx-background-radius: 4;
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}

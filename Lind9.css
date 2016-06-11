@@ -1,0 +1,15 @@
+.root {
+    	-fx-background-color: #FFFFFFF;
+	-fx-background-image: url("http://gfx.azorek.pl/var/azorek/storage/images/wow/bardzo-dziwne-zelkowe-gify-3d-gify/26702-1-pol-PL/Zelowe-gify-to-najdziwniejsza-rzecz-jaka-widziales-w-zyciu_article.gif");
+}
+
+.label{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}
+
+.button{ 
+    -fx-background-radius: 4;
+    -fx-background-color: #000000;
+    -fx-text-fill: #FAEBD7
+}
