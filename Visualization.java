@@ -131,9 +131,22 @@ public class Visualization extends Application implements EventHandler<ActionEve
 			mediaPlayer.play();
 		}
 					
-	});	
+	});
+	
+	MenuItem river = new MenuItem("River Flows in You - Cello & Piano");
+	wing.setOnAction(new EventHandler<ActionEvent>() {
+
+		public void handle(ActionEvent e) {
+			String musicFile = "YirumaLiu.mp3";     
+
+			Media sound = new Media(new File(musicFile).toURI().toString());
+			MediaPlayer mediaPlayer = new MediaPlayer(sound);
+			mediaPlayer.play();
+		}
+					
+	});
 		
-	museMenu.getItems().addAll(wing);
+	museMenu.getItems().addAll(wing, river);
 	MenuBar mb = new MenuBar();
 	mb.getMenus().addAll(museMenu);
 	//add it to the top of the scene
